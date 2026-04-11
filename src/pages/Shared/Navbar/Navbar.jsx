@@ -4,9 +4,11 @@ import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   const links = <>
-  <NavLink to=''>Item 1</NavLink>
-  <NavLink to=''>Item 2</NavLink>
-  <NavLink>Item 3</NavLink>
+  <NavLink to=''> Services</NavLink>
+  <NavLink to='/coverage'> Coverage</NavLink>
+  <NavLink to=''> About Us</NavLink>
+  <NavLink to=''> Pricing</NavLink>
+  <NavLink to=''> Blog</NavLink>
   </>
   return (
     <div className='p-2'>
@@ -25,10 +27,8 @@ const Navbar = () => {
    <Logo></Logo>
   </div>
   <div className="navbar-center hidden lg:flex">
-    <ul className="menu menu-horizontal px-1">
-      <li><a>Item 1</a></li>
-   
-      <li><a>Item 3</a></li>
+    <ul className="menu menu-horizontal gap-6 px-1">
+      {links}
     </ul>
   </div>
   <div className="navbar-end">
